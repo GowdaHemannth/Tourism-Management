@@ -1,0 +1,87 @@
+
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+    <div class="col-8 offset-2" >
+    <h3>Add a New Historic Place of the country</h3>
+    <br>
+    <form method="post" action="/listings" novalidate class="needs-validation">
+        <div class="mb-3"> 
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[title]"
+             placeholder="enter the title" 
+             type="text" 
+             class="form-control"
+             required
+             >
+             <div class="invalid-feedback"> info has not been entered </div>
+            <div class="valid-feedback">Title has been entered </div>
+
+            </div>
+            <br>
+        
+       <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" 
+        placeholder="enter the deccription" 
+        type="text"
+        class="form-control"
+        required
+        ></textarea>
+        <div class="invalid-feedback"> info has not been entered </div>
+       </div>
+       <br>
+
+       <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <input name="listing[image]"
+         placeholder="enter the image URL" 
+         type="text"
+         class="form-control"
+         >
+       </div>
+       <br>
+
+        <div class="mb-3 col-4">
+            <label for="Price" class="form-label">Price</label>
+            <input name="listing[price]"
+             placeholder="enter the price" 
+            
+             class="form-control"
+             required
+             >
+             <div class="invalid-feedback">Wrong info has been entered </div>
+        </div>
+        
+        <br>
+
+        <div class="mb-3"> 
+            <label for="Location" class="form-label">Location</label>
+            <input name="listing[location]" 
+            placeholder="enter the location"
+             type="text"
+             class="form-control"
+             required
+             >
+             <div class="invalid-feedback"> info has not been entered </div>
+        </div>
+        <br>
+    
+       
+        <div class="mb-3 col-8">
+            <label for="Country" class="form-label">Country</label>
+            <input name="listing[country]" 
+            placeholder="enter the country"
+             type="text"
+             class="form-control"
+             required
+             >
+             <div class="invalid-feedback"> info has not been entered </div>
+        </div>
+       
+        <br>
+        <button class="btn btn-dark">
+            Submit
+        </button>
+    </form>
+</div>
+</div>
